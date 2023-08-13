@@ -17,7 +17,7 @@ loop:
             System.out.println("Invalid input!");
             continue loop;
         }
-        }
+    }
 
       if (text.isBlank()) System.out.println("Invalid Input!"); 
       
@@ -28,6 +28,7 @@ loop:
           strArray[i] = strArray[j];
           strArray[j] = temp;
         }
+        
         System.out.print("Reversed text: ");
     
         for (int i = 0; i < strArray.length; i++) {

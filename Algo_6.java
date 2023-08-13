@@ -29,7 +29,6 @@ public class Algo_6{
                 }
             }
 
-
         }while(inputStr.isBlank());
         
     }
