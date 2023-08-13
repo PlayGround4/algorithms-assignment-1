@@ -14,7 +14,7 @@ public class Algo_5 {
       char[] strArray = text.toCharArray();
 
       if (text.isBlank()) System.out.println("Invalid Input!"); 
-      
+
       else {
         for (int i = 0, j = strArray.length - 1;i < strArray.length / 2;i++, j--) {
           char temp = strArray[i];
@@ -24,7 +24,7 @@ public class Algo_5 {
         System.out.print("Reversed text: ");
     
         for (int i = 0; i < strArray.length; i++) {
-          if (strArray[i] != (128)) System.out.print(strArray[i]);
+          if (strArray[i] <128 || strArray[i]>0) System.out.print(strArray[i]);
         }
        
       }
