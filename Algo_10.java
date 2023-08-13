@@ -31,9 +31,9 @@ public class Algo_10 {
       if (input.startsWith("+94")) {
         numArray = input.split(" ");
         if (
-          numArray[1].length() == 2 &&
-          numArray[2].length() == 3 &&
-          numArray[3].length() == 4
+          numArray[1].length() == 2 && !numArray[1].contains("-") && !numArray[1].contains("+") &&
+          numArray[2].length() == 3 && !numArray[2].contains("-") && !numArray[2].contains("+") &&
+          numArray[3].length() == 4 && !numArray[3].contains("-") && !numArray[3].contains("+")
         ) System.out.println("Number is validated"); else System.out.println(
           "Invalid phone number."
         );
